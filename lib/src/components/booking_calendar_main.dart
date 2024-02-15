@@ -52,7 +52,7 @@ class BookingCalendarMain extends StatefulWidget {
 
   final Stream<dynamic>? Function(
       {required DateTime start, required DateTime end}) getBookingStream;
-  final Future<dynamic> Function({required BookingService newBooking})
+  final Stream<dynamic>? Function({required BookingService newBooking})
       uploadBooking;
   final List<DateTimeRange> Function({required dynamic streamResult})
       convertStreamResultToDateTimeRanges;
